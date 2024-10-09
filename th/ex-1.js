@@ -9,7 +9,11 @@
 
 // Start coding here
 
-const tempt1 = [14.0, 15.8, 24.8, 26.6, 32.0];
+function calculateTempt(tempt) {
+  return tempt.map((fahrenheit) => ((fahrenheit - 32) * 5) / 9);
+}
+
+const tempt1 = [14.0, 15.8, 24.8, 32.0];
 console.log(calculateTempt(tempt1)); // [ -10, -9, -4, 0 ]
 
 const tempt2 = [14.0, 32.0, 41.0, -13.0, -9.4];
